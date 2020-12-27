@@ -30,6 +30,7 @@ class XCUITest101UITests: XCTestCase {
     
     func testRefactored() {
         let app = XCUIApplication()
+        
         app.buttons["enter"].tap()
         XCTAssert(app.staticTexts["Welcome to XCUITest"].exists)
     }
